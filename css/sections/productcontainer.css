@@ -1,0 +1,10 @@
+.product-container {
+	position: relative;
+}
+
+.product-container__hero-img {
+	width: 100%;
+	object-fit: cover;
+	position: relative;
+	z-index: -2;
+}

@@ -1,0 +1,26 @@
+.price-container {
+	position: relative;
+}
+
+.new-price {
+	font-size: 1.5rem;
+	font-weight: var(--fw-bold);
+}
+
+.discount {
+	color: var(--clr-primary-01);
+	background: var(--clr-primary-02);
+    font-weight: var(--fw-bold);
+	padding: 4px 8px;
+	border-radius: 0.5rem;
+}
+
+.old-price {
+	color: var(--clr-neutral-03);
+	font-size: 0.875rem;
+	font-weight: var(--fw-bold);
+	position: absolute;
+	right: 27px;
+	bottom: 50%;
+    transform: translateY(50%);
+}

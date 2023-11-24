@@ -1,0 +1,25 @@
+.header {
+	padding: 1.5em;
+}
+
+.header__left {
+	gap: 1rem;
+}
+
+.header__right {
+	
+	gap: 1rem;
+}
+
+.header__avatar {
+	border-radius: 50%;
+	border: 0px solid var(--clr-primary-01);
+	width: 2.5rem;
+	height: 2.5rem;
+	object-fit: cover;
+	transition: 0.2s all;
+}
+
+.header__avatar:hover {
+	border-width: 3px;
+}

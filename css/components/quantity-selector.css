@@ -1,0 +1,15 @@
+.quantity-selector {
+	border-radius: 1rem;
+	background: var(--clr-neutral-04);
+	padding: 1em 1.5em;
+}
+
+.quantity-selector__btn {
+	color: var(--clr-primary-01);
+	font-size: 1.125rem;
+	font-weight: var(--fw-bold);
+}
+
+.quantity-selector__btn:active {
+	transform: scale(0.9);
+}

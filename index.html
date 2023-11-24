@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | E-commerce product page</title>
+		<script defer src="./javascript/script.js"></script>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header d-flex items-center justify-between">
+				<div class="header__left d-flex items-center">
+					<button class="btn">
+						<img
+							src="./images/icon-menu.svg"
+							alt=""
+							class="hamburger-icon cursor-pointer" />
+					</button>
+					<img src="./images/logo.svg" alt="" class="logo" />
+					<nav class="nav">
+						<button class="btn">
+							<img
+								src="./images/icon-close.svg"
+								alt=""
+								class="nav__close-icon cursor-pointer" />
+						</button>
+						<ul class="d-flex flex-col">
+							<li>
+								<a href="#" class="nav__link">Collections</a>
+							</li>
+							<li><a href="#" class="nav__link">Men</a></li>
+							<li><a href="#" class="nav__link">Women</a></li>
+							<li><a href="#" class="nav__link">About</a></li>
+							<li><a href="#" class="nav__link">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__right d-flex items-center">
+					<div class="cart">
+						<button class="btn">
+							<img
+								src="./images/icon-cart.svg"
+								alt=""
+								class="cart__icon cursor-pointer" />
+						</button>
+						<span class="cart__count cart__count--hide">2</span>
+					</div>
+					<div class="cart-box cart-box--hide">
+						<h3 class="cart-box__header tertiary-header">Cart</h3>
+						<hr class="cart-box__divider" />
+						<div class="cart-box__content">
+							<!-- CART ITEM -->
+						</div>
+					</div>
+					<img
+						src="./images/image-avatar.png"
+						alt=""
+						class="header__avatar cursor-pointer" />
+				</div>
+			</header>
+			<main class="main">
+				<section class="hero">
+					<div class="hero__left">
+						<div class="product-container cursor-pointer">
+							<img
+								src="./images/image-product-1.jpg"
+								alt="A pair of white and orange sneakers on an orange background."
+								class="product-container__hero-img" />
+							<div class="button-container">
+								<button
+									class="btn btn--sm btn--prev cursor-pointer">
+									&larr;
+								</button>
+								<button
+									class="btn btn--sm btn--next cursor-pointer">
+									&rarr;
+								</button>
+							</div>
+						</div>
+						<div class="thumbnail-container cursor-pointer">
+							<img
+								src="./images/image-product-1-thumbnail.jpg"
+								data-src="./images/image-product-1.jpg"
+								data-id="1"
+								alt="Product 1"
+								class="thumbnail__img thumbnail__img--1 thumbnail__img--active" />
+							<img
+								src="./images/image-product-2-thumbnail.jpg"
+								data-src="./images/image-product-2.jpg"
+								data-id="2"
+								alt="Product 2"
+								class="thumbnail__img thumbnail__img--2" />
+							<img
+								src="./images/image-product-3-thumbnail.jpg"
+								data-src="./images/image-product-3.jpg"
+								data-id="3"
+								alt="Product 3"
+								class="thumbnail__img thumbnail__img--3" />
+							<img
+								src="./images/image-product-4-thumbnail.jpg"
+								data-src="./images/image-product-4.jpg"
+								data-id="4"
+								alt="Product 4"
+								class="thumbnail__img thumbnail__img--4" />
+						</div>
+					</div>
+					<div class="hero__right">
+						<h1 class="main-header m-1">Sneaker Company</h1>
+						<h2 class="secondary-header mb-8">
+							Fall Limited Edition
+							<br />
+							Sneakers
+						</h2>
+						<p class="description">
+							These low-profile sneakers are your perfect casual
+							wear companion. Featuring a durable rubber outer
+							sole, they'll withstand everything the weather can
+							offer.
+						</p>
+						<div class="price-container mt-15">
+							<div class="d-flex items-center">
+								<span class="new-price mr-6">
+									&dollar;125.00
+								</span>
+								<span class="discount">50&percnt;</span>
+							</div>
+							<span class="old-price text-line-through">
+								&dollar;250.00
+							</span>
+						</div>
+						<div class="button-container mt-15">
+							<div
+								class="quantity-selector d-flex justify-between items-center">
+								<button
+									class="btn quantity-selector__btn quantity-selector__btn--minus cursor-pointer">
+									&minus;
+								</button>
+								<span class="quantity-selector__count">1</span>
+								<button
+									class="btn quantity-selector__btn quantity-selector__btn--add cursor-pointer">
+									&plus;
+								</button>
+							</div>
+
+							<button
+								class="cursor-pointer btn btn--primary btn--lg btn--add-to-cart mt-15 d-flex items-center justify-center gap-1">
+								<span>
+									<img
+										src="./images/icon-cart.svg"
+										alt="cart icon"
+										class="cart-icon" />
+								</span>
+								Add to Cart
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
+
+<!-- 							<div class="cart-item padding-1-5em">
+								<div class="d-flex items-center gap-1 mb-1-5em">
+									<img
+										src="./images/image-product-1-thumbnail.jpg"
+										alt="Product Thumbnail"
+										class="cart-item__img" />
+									<div class="cart-item__content">
+										<h2 class="cart-item__header mb-5">
+											Fall Limited Edition Sneakers
+										</h2>
+										<p class="cart-item__price">
+											<span class="cart-item__unit-price">
+												&dollar;125.00
+											</span>
+											&times;
+											<span class="quantity">3</span>
+											<span
+												class="cart-item__final-price">
+												<strong>&dollar;375.00</strong>
+											</span>
+										</p>
+									</div>
+									
+									<button
+										class="btn btn--delete cursor-pointer">
+										<img
+											src="./images/icon-delete.svg"
+											alt="Delete Icon"
+											class="delete-icon" />
+									</button>
+								</div>
+						
+								<button class="btn btn--primary btn--lg">
+									Checkout
+								</button>
+							</div> -->

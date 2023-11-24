@@ -1,0 +1,146 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 80vw;
+		margin: 0 auto;
+	}
+
+	/* HEADER */
+	.header {
+		border-bottom: 2px solid var(--clr-neutral-04);
+		padding: 2.5em 0;
+	}
+
+	/* HEADER RIGHT */
+	.header__left {
+		gap: 4rem;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+
+	.nav::before {
+		content: none;
+	}
+
+	.nav {
+		position: static;
+		width: auto;
+		height: auto;
+		background: transparent;
+		padding: 0;
+	}
+
+	.nav ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+	}
+
+	.nav__close-icon {
+		display: none;
+	}
+
+	.nav__link {
+		color: var(--clr-neutral-03);
+		font-weight: var(--fw-regular);
+	}
+
+	.nav__link:hover {
+		color: var(--clr-neutral-01);
+		border-bottom: 4px solid var(--clr-primary-01);
+		padding-bottom: 2.5em;
+	}
+
+	.nav li:hover .nav li::before {
+		content: "";
+		background: var(--clr-primary-01);
+		display: block;
+		width: 100%;
+		height: 2px;
+		position: absolute;
+	}
+
+	/* HEADER RIGHT */
+	.cart-box {
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+		left: 74%;
+	}
+
+	/* MAIN */
+	.button-container {
+		display: none;
+	}
+
+	/* HERO */
+	.hero {
+		display: flex;
+		align-items: centern;
+		gap: 6rem;
+		padding: 6em 4em 8em;
+	}
+
+	/* HERO RIGHT */
+	.hero__right {
+		margin-top: 1.5em;
+	}
+
+	.main-header {
+		font-size: 0.875rem;
+	}
+
+	.secondary-header {
+		font-size: 3rem;
+		margin-bottom: 0.8em;
+	}
+
+	.hero__right .button-container {
+		display: grid;
+		grid-template-columns: 0.5fr 1fr;
+		grid-gap: 1em;
+		align-items: center;
+		margin-top: 3em;
+	}
+
+	.old-price {
+		display: inline-block;
+		position: static;
+		margin-top: 0.2em;
+	}
+
+	.btn--lg {
+		margin: 0;
+	}
+
+	/* PRODUCT */
+	.product-container__hero-img {
+		border-radius: 1rem;
+	}
+
+	/* THUMBNAIL */
+	.thumbnail-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 1.5em;
+		width: 100%;
+	}
+
+	.thumbnail__img {
+		border-radius: 1rem;
+		transition: all 0.3s ease-in-out;
+		height: 6rem;
+	}
+
+	.thumbnail__img:hover {
+		opacity: 0.5;
+		transform: scale(0.9);
+	}
+
+	.thumbnail__img--active {
+		border: 2px solid var(--clr-primary-01);
+		opacity: 0.5;
+		transform: scale(0.9);
+	}
+}
